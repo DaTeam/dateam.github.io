@@ -1,8 +1,19 @@
 {
   "meta": {
-    "username": "put your username here",
-    "repositoryName": "put your repository name here",
+    "username": "DaTeam",
+    "repositoryName": "dateam.github.io",
     "branch": "master"
+  },
+  "site": {
+    "title": "Blog DaTeam",
+    "description": "",
+    "postsPerPage": "10",
+    "url": "http://blog.da.team"
+  },
+  "socialnetwork": {
+    "email": "contact@dateam.fr",
+    "twitter": "https://twitter.com/DaTeamFr",
+    "github": "https://github.com/DaTeam"
   },
   "theme": {
     "name": "Casper"
