@@ -2,7 +2,8 @@
   "meta": {
     "username": "DaTeam",
     "repositoryName": "dateam.github.io",
-    "branch": "master"
+    "branch": "master",
+    "cname": "blog.da.team"
   },
   "site": {
     "title": "DaTeam",
