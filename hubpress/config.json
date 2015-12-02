@@ -1,8 +1,20 @@
 {
   "meta": {
-    "username": "put your username here",
-    "repositoryName": "put your repository name here",
-    "branch": "gh-pages"
+    "username": "DaTeam",
+    "repositoryName": "dateam.github.io",
+    "cname": "blog.da.team",
+    "branch": "master"
+  },
+  "site": {
+    "title": "Blog DaTeam",
+    "description": "",
+    "postsPerPage": "10",
+    "url": "http://blog.da.team"
+  },
+  "socialnetwork": {
+    "email": "contact@dateam.fr",
+    "twitter": "https://twitter.com/DaTeamFr",
+    "github": "https://github.com/DaTeam"
   },
   "theme": {
     "name": "Casper"
