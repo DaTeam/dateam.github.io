@@ -1,0 +1,20 @@
+#alert {
+	position: absolute;
+	top: 50%; 
+	left: 50%;
+	margin: -340px 0 0 -435px;	
+}
+
+#alert_message {
+	position: absolute;
+	top: 50%; 
+	left: 50%;
+	font-family: 'Roboto', sans-serif;
+	font-size: 22px;
+	text-align: center;
+	color: #495272;
+	margin: 145px 0 0 -380px;	
+}
+html, body {
+	background-color: #e2e7ed;
+}
