@@ -135,7 +135,7 @@ function handleComplete(event) {
 	stage.addChild(counter, description_txt);
 	
 	// Start functions
-	counter_start();
+	//counter_start();
 	resize();
 	if (flickering) { createjs.Ticker.addEventListener("tick", tick); }
 	
