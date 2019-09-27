@@ -44,7 +44,7 @@ section{}
 #company p {max-width: 45vw; text-align:  justify; float: right; padding-right: 3vw;}
 
 .navbar {height: 100px;width: 70%;display: block;float: left;}
-.menu {margin: 0;list-style-type: none;/* justify-content: flex-end; */color: #61a6e4;top: 50%;display: block;text-align: center;position: relative;padding: 0;float: left;transform: translateY(-50%);width: 100%;}
+.menu {margin: 0;list-style-type: none;color: #61a6e4;top: 50%;display: flex; text-align: center;position: relative;padding: 0;float: left;transform: translateY(-50%);width: 100%;}
 .menu-item {margin-left: 25px;line-height: 40px;height: 40px;font-size: 0.8vw;display: inline-block;}
 /* Footer */
 .footer {color: #fdfdfd;background-color: #68a3b9;padding: 20px;}
@@ -166,15 +166,16 @@ h1 {margin:0;font-size: 2.4vw; font-weight: 100}
 @media (max-width: 750px) {
     body,.menu-item,.scroll .menu-item{font-size: 4vw;};
     .menu-item,.menu a,.scroll .menu-item,.scroll .menu-item,.scroll .menu a{display: block !important;margin: 0 !important; color: #5eaae5; text-align: left !important;height: auto !important;padding: 0;}
-    header{width: 260px !important; background-color: #fff;bottom: 0px;height: auto !important;padding-left: 4vw !important;left: -260px;}
-    .logo{position: absolute; top: 0px;height: 60px;width: 60px;z-index: 10;left: 260px;background-color: #1c49a0;}
+    header{width: 220px !important; background-color: #fff;bottom: 0px;height: auto !important;padding-left: 4vw !important;left: -220px; transition: left 0.3s}
+    .m-menu-opened header{left: 0;transition: left 0.3s;}
+    .logo{position: absolute; top: 0px;height: 60px;width: 60px;z-index: 10;left: 220px;background-color: #1c49a0;}
     .scroll .logo {
     filter: none;
     background-color: #1c49a0;
     }
     .scroll .logo {}
-    .menu{top: 20px; transform: translateY(0);text-align: left;}
-    .menu-item,.scroll .menu-item{line-height: 27px; padding: 20px 0;margin: 0;height: auto;}
+    .menu{top: 20px; transform: translateY(0);text-align: left; flex-direction: column;}
+    .menu-item,.scroll .menu-item{line-height: 27px; padding: 5px 0; margin: 0;height: auto;}
     .scroll .logo img.hover{margin-top: -30px}
     .menu a,.scroll .menu a{color: #1c49a0;
     padding: 5px 0px;
@@ -205,9 +206,9 @@ h1 {margin:0;font-size: 2.4vw; font-weight: 100}
     #support .backDeco1{height: 360px; width: 100%; position: relative;background-size: 170%;background-position: left;}
     .contact-form{width: 100%; padding: 100px 0px;}
     #support .backDeco{display: none;}
-    #backDeco{height: 600vh}
+    /* #backDeco{height: 600vh} */
+    #backDeco{height: 1000vh} 
     .customer-item{overflow: visible !important;}
-
 }
 
 
