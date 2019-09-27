@@ -10,7 +10,7 @@ html {width: 100%;height: 100%;}
 body {
     margin: 0;
     /* color: #61a5e4; */
-    color: #465573;
+    color: #003a8a;
     font-family: "Open Sans", sans-serif;
     font-size: 1.2vw;
     background-color: #d5d5d5;
@@ -130,6 +130,12 @@ h1 {margin:0;font-size: 2.4vw; font-weight: 100}
 .member-desc {margin: 0 20px;text-align: center;}
 #support h1{ text-align: right; color: #60a4e4; padding-right: 3vw }
 #support .picture-container {position: absolute;z-index: 10;width: 42vw;bottom: -7vh;left: 50%;transform: translateX(-50%);}
+#support .description {
+    width: 50vw;
+    text-align: left;
+    float: right;
+    padding-right: 3vw;
+}
 #support .contenu{color: #60a4e4; width: 80vw; text-align: justify; float: right; padding-right: 3vw; height: 25vh;padding-bottom: 60px;}
 #support .content{ top: 16% !important; transform: translateY(-12%); }
 .support-picture {width: 100%;}
