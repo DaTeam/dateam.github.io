@@ -1,12 +1,15 @@
 (function (globalThis) {
     const config = {
         scrollTopThreshold: 350,
-        menuCollapsedThreshold: 150
+        menuCollapsedThreshold: 150,
+        contactFormSelector: '.contact-form',
+        contactFormInputSelector: '.contact-form .input'
     };
 
-    const refs = {
-        CONTACT_FORM_SELECTOR: '.contact-form',
-        CONTACT_FORM_INPUT_SELECTOR: '.contact-form .input'
+    const refs = {};
+
+    const data = {
+        mobileMenuOpened: false
     };
 
     globalThis.onload = (event => {
@@ -19,7 +22,8 @@
         // Scroll navigation
         applyAnchorScrolling('.anchor-link');
         applyScrollToTop('.link-to-top');
-        applyOnScrollBehaviour();
+        applyMobileMenuBehavior('.m-trigger-menu');
+        applyOnScrollBehavior();
 
         // Display
         refreshHeaderMode();
@@ -30,7 +34,7 @@
 
     function loadRefs() {
         refs.scrollTopElements = [...globalThis.document.querySelectorAll('.link-to-top')];
-        refs.formInputElements = [...globalThis.document.querySelectorAll(refs.CONTACT_FORM_INPUT_SELECTOR)];
+        refs.formInputElements = [...globalThis.document.querySelectorAll(config.contactFormInputSelector)];
     }
 
     function applyAnchorScrolling(selector) {
@@ -55,7 +59,19 @@
         });
     }
 
-    function applyOnScrollBehaviour() {
+    function applyMobileMenuBehavior(selector) {
+        const mobileMenuElement = globalThis.document.querySelector(selector);
+
+        if (mobileMenuElement) {
+            mobileMenuElement.addEventListener('click', () => {
+                data.mobileMenuOpened = !data.mobileMenuOpened;
+                if (data.mobileMenuOpened) globalThis.document.body.classList.add('m-menu-opened');
+                else globalThis.document.body.classList.remove('m-menu-opened')
+            });
+        }
+    }
+
+    function applyOnScrollBehavior() {
         globalThis.onscroll = () => {
             refreshHeaderMode();
         };
@@ -72,7 +88,7 @@
     }
 
     function applyContactFormBehavior() {
-        const form = globalThis.document.querySelector(refs.CONTACT_FORM_SELECTOR);
+        const form = globalThis.document.querySelector(config.contactFormSelector);
 
         if (form) {
             form.addEventListener('submit', onContactSubmit)
