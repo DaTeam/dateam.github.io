@@ -1,5 +1,6 @@
 (function (globalThis) {
     const config = {
+        version: '0.1.0',
         scrollTopThreshold: 350,
         menuCollapsedThreshold: 150,
         contactFormSelector: '.contact-form',
@@ -22,6 +23,8 @@
     });
 
     function initialize() {
+        globalThis.appVersion = config.version;
+
         loadRefs();
         data.mobileEnabled = isMobile(navigator.userAgent || navigator.vendor || window.opera);
 
