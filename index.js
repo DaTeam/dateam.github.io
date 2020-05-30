@@ -6,7 +6,8 @@
         contactFormInputSelector: '.contact-form .input',
         mobile: {
             menuTriggerElement: '.m-trigger-menu'
-        }
+        },
+        contactFormSubmitUrl: 'https://dateam.azurewebsites.net/api/SendContactForm?code=oXoHZbTGvahR7dSLVlaOV3vBApaBRLScOx99tktUb03qRa5H0qzAVg=='
     };
 
     const refs = {};
@@ -26,7 +27,7 @@
 
         // Scroll navigation
         applyAnchorScrolling('.anchor-link');
-        
+
         if (!data.mobileEnabled) applyScrollToTop('.link-to-top');
         else applyMobileMenuBehavior();
 
@@ -133,7 +134,23 @@
             return acc;
         }, {});
 
-        console.log(formData);
+        const headers = new Headers();
+
+        headers.append('Content-Type', 'application/json');
+        headers.append('Accept', 'application/json');
+
+        fetch(config.contactFormSubmitUrl, {
+            headers,
+            method: 'post',
+            body: JSON.stringify(formData)
+        })
+            .then(() => {
+                alert('Merci pour votre message, celui-ci a bien été envoyé et nous reviendrons vers vous dès que possible.');
+            })
+            .catch(err => {
+                console.warn(err.message);
+                alert('Merci pour votre message, cependant une erreur est survenue lors de l\'envoi.');
+            });
     }
 
     function isMobile(agent) {
