@@ -60,7 +60,7 @@ section{}
     width: 100%;
     top: 0px;
     position: relative;
-    background-image: url(assets/images/bird1.png);
+    background-image: url(images/bird1.png);
     background-repeat: no-repeat;
     background-size: 100%;
     left: 50%;
@@ -71,7 +71,7 @@ section{}
     width: 44%;
     top: 0px;
     position: absolute;
-    background-image: url(assets/images/bird.png);
+    background-image: url(images/bird.png);
     background-repeat: no-repeat;
     background-position: bottom right;
     background-size: 100%;
@@ -82,7 +82,7 @@ section{}
     width: 100%;
     top: 0px;
     position: absolute;
-    background-image: url(assets/images/funambule.svg);
+    background-image: url(images/funambule.svg);
     background-repeat: no-repeat;
     background-position: bottom right;;
 }
@@ -99,11 +99,11 @@ h1 {margin:0;font-size: 2.4vw; font-weight: 100}
 
 
 #backDeco{ background: url(image/bg.jpg)}
-#backDeco{background-image: url(assets/images/back-min.jpg); background-size:100% 100%;width: 100%; height: 100vh; background-position: top; position: absolute; height: 500vh; top: 0;}
-/*#company .backDeco{width: 100%; height: 100vh;background-image: url(assets/images/2-min.jpg);top: 0; right: 0;background-position: top right;background-size: 100%;}
-#team .backDeco{width: 100%; height: 100vh;background-image: url(assets/images/3-min.jpg);top: 0; right: 0;background-position: bottom center;background-size: 100%;}
-#support .backDeco{width: 100%; height: 100vh;background-image: url(assets/images/4-min.jpg);top: 0; right: 0;background-position: top center;background-size: 100%;}
-#contact .backDeco{width: 100%; height: 100vh;background-image: url(assets/images/5-min.jpg);top: 0; right: 0;background-position: bottom center;background-size: 100%;z-index: 0}
+#backDeco{background-image: url(images/back-min.jpg); background-size:100% 100%;width: 100%; height: 100vh; background-position: top; position: absolute; height: 500vh; top: 0;}
+/*#company .backDeco{width: 100%; height: 100vh;background-image: url(images/2-min.jpg);top: 0; right: 0;background-position: top right;background-size: 100%;}
+#team .backDeco{width: 100%; height: 100vh;background-image: url(images/3-min.jpg);top: 0; right: 0;background-position: bottom center;background-size: 100%;}
+#support .backDeco{width: 100%; height: 100vh;background-image: url(images/4-min.jpg);top: 0; right: 0;background-position: top center;background-size: 100%;}
+#contact .backDeco{width: 100%; height: 100vh;background-image: url(images/5-min.jpg);top: 0; right: 0;background-position: bottom center;background-size: 100%;z-index: 0}
 */
 
 .main-view {height: 850px;}

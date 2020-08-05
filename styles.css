@@ -15,22 +15,17 @@ html {
     display: none !important;
 }
 
-input {
-    font-family: "Bodoni MT", Didot, "Didot LT STD", "Book Antiqua", Garamond, "Times New Roman", serif;
-    font-family: Georgia, Times, "Times New Roman", serif;
-    font-family: Tahoma, Verdana, Segoe, sans-serif;
+input, textarea {
+    /* font-family: "Bodoni MT", Didot, "Didot LT STD", "Book Antiqua", Garamond, "Times New Roman", serif; */
+    /* font-family: Georgia, Times, "Times New Roman", serif; */
+    /* font-family: Tahoma, Verdana, Segoe, sans-serif; */
     font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", sans-serif;
 }
 
 body {
     height: 100%;
-    /* max-height: 100%; */
     margin: 0;
     font-family: "Open Sans", sans-serif;
-    /* font-family: Palatino, "Palatino LT STD", "Palatino Linotype", "Book Antiqua", Georgia, serif; */
-    /* font-family: "Bodoni MT", Didot, "Didot LT STD", "Book Antiqua", Garamond, "Times New Roman", serif; */
-    /* font-family: Georgia, Times, "Times New Roman", serif; */
-
 
     color: white;
     font-size: 14px;
@@ -51,7 +46,6 @@ body {
 .header, .footer {
     height: 100px;
     min-height: 50px;
-    width: 100vw;
 }
 
 .main {
