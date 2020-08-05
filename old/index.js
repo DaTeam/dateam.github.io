@@ -5,7 +5,6 @@
         menuCollapsedThreshold: 150,
         contactFormSelector: '.contact-form',
         contactFormInputSelector: '.contact-form .input',
-        jsOnlyClass: 'js-only',
         mobile: {
             menuTriggerElement: '.m-trigger-menu'
         },
@@ -26,7 +25,6 @@
     function initialize() {
         globalThis.appVersion = config.version;
 
-        removeJsFilteringCss();
         loadRefs();
         data.mobileEnabled = isMobile(navigator.userAgent || navigator.vendor || window.opera);
 
@@ -43,10 +41,6 @@
 
         // Form
         applyContactFormBehavior();
-    }
-
-    function removeJsFilteringCss() {
-        [...globalThis.document.querySelectorAll('.' + config.jsOnlyClass)].forEach(item => item.classList.remove(config.jsOnlyClass));
     }
 
     function loadRefs() {
