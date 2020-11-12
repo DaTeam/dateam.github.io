@@ -146,7 +146,7 @@
         const requestData = [...formData.entries()].reduce((acc, entry) => {
             let [key, value] = entry;
 
-            if (key === 'g-recaptcha-response') key = 'recaptcha';
+            // if (key === 'g-recaptcha-response') key = 'recaptcha';
 
             acc[key] = value;
 
@@ -165,8 +165,9 @@
             method: 'post',
             body: JSON.stringify(requestData)
         })
-            .then(() => {
-                // TODO: Check response code
+            .then(response => {
+                if (!response.ok) throw new Error(response.statusText);
+
                 alert('Merci pour votre message, celui-ci a bien été envoyé et nous reviendrons vers vous dès que possible.');
                 clearContactFormInputs();
             })
