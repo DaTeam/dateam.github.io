@@ -45,9 +45,8 @@
     function onContactSubmit(ev) {
         ev.preventDefault();
 
-        if (submittingForm) return;
-        if (!config.onRequest()) return;
-
+        if (submittingForm) return cancelSubmit('submit in progress');
+        if (!config.onRequest()) return cancelSubmit('aborted by consumer');
 
         const formData = new FormData(ev.target);
         const requestData = [...formData.entries()].reduce((acc, entry) => {
@@ -58,7 +57,10 @@
             return acc;
         }, {});
 
-        if (!isString(requestData.recaptcha) || requestData.recaptcha.trim().length === 0) return;
+        console.log(requestData);
+        if (!isString(requestData.recaptcha) || requestData.recaptcha.trim().length === 0) {
+            return cancelSubmit('recaptcha is not valid');
+        }
 
         const headers = new Headers();
 
@@ -82,6 +84,11 @@
                 submittingForm = false;
                 config.onSettled();
             });
+    }
+
+    function cancelSubmit(msg) {
+        config.onError(new Error(msg));
+        config.onSettled();
     }
 
     function isString(arg) {
