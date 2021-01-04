@@ -5,6 +5,7 @@
         onSuccess: () => { },
         onError: () => { },
         onSettled: () => { },
+        recaptchaKey: 'g-recaptcha-response',
         formSubmitUrl: 'https://dateam.azurewebsites.net/api/SendContactForm?code=oXoHZbTGvahR7dSLVlaOV3vBApaBRLScOx99tktUb03qRa5H0qzAVg=='
     };
 
@@ -52,12 +53,13 @@
         const requestData = [...formData.entries()].reduce((acc, entry) => {
             let [key, value] = entry;
 
+            if (key === config.recaptchaKey) key = 'recaptcha';
+
             acc[key] = value;
 
             return acc;
         }, {});
 
-        console.log(requestData);
         if (!isString(requestData.recaptcha) || requestData.recaptcha.trim().length === 0) {
             return cancelSubmit('recaptcha is not valid');
         }
