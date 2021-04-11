@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="3800px" height="184px" viewBox="0 0 3800 184" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>shape-2</title>
+    <defs>
+        <linearGradient x1="22.3548993%" y1="56.9511244%" x2="192.912663%" y2="56.9511244%" id="linearGradient-1">
+            <stop stop-color="#163253" offset="0%"></stop>
+            <stop stop-color="#738498" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Shapes" fill="url(#linearGradient-1)" fill-rule="nonzero" stroke="#979797">
+            <path d="M1439.63265,0 C1694.14611,-0.400878916 1763.1067,67.6363065 2086.34325,41.346763 C2406.68141,15.2929516 2476.55602,41.346763 2620,87.5461307 C2696.09966,112.055742 2959.05243,145.719186 3284.63213,126.499117 C3499.41202,113.819937 3671.2013,132.653564 3800,183 L0,183 C221.731004,145.999412 439.045227,127.499117 651.942668,127.499117 C843.378794,127.499117 1143.38625,49.0884348 1179.55019,36.2790208 C1277.85562,1.45884235 1396.54864,0.069943133 1439.63265,0 Z" id="shape-2"></path>
+        </g>
+    </g>
+</svg>

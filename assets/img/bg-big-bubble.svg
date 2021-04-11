@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="609px" height="602px" viewBox="0 0 609 602" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Path 3 Copy</title>
+    <defs>
+        <linearGradient x1="50%" y1="-27.1416805%" x2="44.0064626%" y2="132.16852%" id="linearGradient-1">
+            <stop stop-color="#A7A8C9" offset="0%"></stop>
+            <stop stop-color="#163253" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.227632068">
+        <g id="Dateam---Expertise" transform="translate(-248.000000, -826.000000)" fill="url(#linearGradient-1)">
+            <path d="M374.02846,849.291641 C445.596704,822.737695 688.299363,774.837005 817.963871,1001.31985 C947.628379,1227.8027 722.442644,1304.215 605.736594,1340.74263 C489.030545,1377.27025 454.509869,1388.33197 418.291659,1404.68968 C382.073448,1421.0474 306.141578,1476.6027 272.463512,1323.28694 C238.785445,1169.97117 215.614813,908.067812 374.02846,849.291641 Z" id="Path-3-Copy"></path>
+        </g>
+    </g>
+</svg>

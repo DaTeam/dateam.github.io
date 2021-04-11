@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Accueil - yourProject</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <meta name="description" content="Description de yourProject">
+  <meta name="keywords" content="yourProject, yourProject">
+
+  <!-- Feuille(s) de style CSS -->
+  <link rel="stylesheet" href="assets/css/styles.min.css">
+</head>
+
+<body class="page-home">
+
+  <!-- Header -->
+
+
+  <main class="site-main" role="main">
+    <div class="site-wrapper">
+      <div class="zone-1">
+        <!-- Composant 1 -->
+<div class="component-1" id="component-1">
+  <div class="component-1-inner">
+    Component 1
+  </div><!-- /.component-1 -->
+</div>
+
+
+        <!-- Composant 2 -->
+<div class="component-2" id="component-2">
+  <div class="component-2-inner">
+    Component 2
+  </div><!-- /.component-2 -->
+</div>
+
+      </div>
+
+      <div class="zone-2">
+        <!-- Composant 3 -->
+<div class="component-3" id="component-3">
+  <div class="component-3-inner">
+    Component 3
+  </div><!-- /.component-3 -->
+</div>
+
+      </div>
+
+      <aside class="zone-3 one-quarter" role="complementary">
+        <!-- Composant 4 -->
+<div class="component-4" id="component-4">
+  <div class="component-4-inner">
+    Component 4
+  </div><!-- /.component-4 -->
+</div>
+
+      </aside>
+    </div><!-- /.site-wrapper -->
+  </main>
+
+  <!-- Footer -->
+<footer>
+  <div class="container">
+      <div class="grid grid-2">
+        <div></div>
+        <div class="form-content">
+          <h3 class="lvl1">Contactez-nous</h3>
+          <div class="social-list">
+            <a target="_blank" href="https://www.facebook.com/dateamfr/" class="icon-social lvl2">
+              <img width="42" src="./assets/img/ic-facebook.svg" alt="">
+            </a>
+            <a target="_blank" href="https://twitter.com/DaTeamFr" class="icon-social lvl2">
+              <img width="42" src="./assets/img/ic-twitter.svg" alt="">
+            </a>
+            <a target="_blank" href="https://www.linkedin.com/company/dateam/" class="icon-social lvl3">
+              <img width="42" src="./assets/img/ic-linkedin.svg" alt="">
+            </a>
+          </div>
+          <h4 class="lvl5">Pour nous parler de vos nouveaux projets, on adore les belles histoires.</h4>
+          <form method="POST" class="contact-form lvl1" onsubmit="return applyDaContact();">
+              <div>
+                  <input id="nom-complet" type="text" name="name" required="required">
+                  <label for="nom-complet" class="custom-label">Nom complet</label>
+                  <div class="cover"></div>
+              </div>    
+              <div>
+                  <input id="email" type="email" name="email" required="required">
+                  <label for="email" class="custom-label">Email</label>
+                  <div class="cover"></div>
+              </div>   
+              <div>
+                  <textarea id="message" name="message" cols="30" rows="3" required="required"></textarea>
+                  <label for="message" class="custom-label">Votre message</label>
+                  <div class="cover"></div>
+              </div>   
+              <div class="form-group checkbox checkbox-firstline">
+                  <input type="checkbox" id="test"  required="required"/>
+                  <label for="test">En cochant cette case, j’accepte les <a href="mentions-legales">conditions générales d’utilisation.</a></label>
+              </div>
+              <div class="parent-captcha">
+                <div class="g-recaptcha" data-sitekey="6LcxEeIZAAAAAJO0bA4flXusnPR5Dy-jc1P4t7Pg" data-size="normal"></div>
+              </div>
+              <div class="sending">
+                <button type="submit" class="btn bold ">
+                  Envoyer
+                  <svg width="20" height="18" xmlns="http://www.w3.org/2000/svg"><path d="M1.4 17.4l17.45-7.48a1 1 0 000-1.84L1.4.6a.993.993 0 00-1.39.91L0 6.12c0 .5.37.93.87.99L15 9 .87 10.88c-.5.07-.87.5-.87 1l.01 4.61c0 .71.73 1.2 1.39.91z" fill="#FFF" fill-rule="nonzero"/></svg>
+                </button>
+              </div>
+          </form>
+        </div>
+      </div>
+  </div>
+  <div class="credits">
+      <div class="credits-infos">© Dateam 2021. Tous droits réservés.</div>
+      <div class="credits-links"><a href="/mentions-legales.html">Mentions légales</a>•<a href="#" onclick="document.cookie='cookiebar=;expires=Thu, 01 Jan 1970 00:00:01 GMT;path=/'; setupCookieBar(); return false;">Désactiver les cookies</a>
+        •<a href="/plan-du-site.html">Plan du site</a></div>
+  </div>
+</footer>
+<div class="status_form" style="display:none;">
+  <h5>Votre message a été envoyé</h5>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+<script src="assets/js/rellax.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/cookie-bar/cookiebar-latest.min.js?theme=momh&tracking=1&always=1&refreshPage=1&showNoConsent=1&noConfirm=1&showPolicyLink=1&privacyPage=%2Fmentions-legales.html"></script>
+<script src="assets/js/daContact.js"></script>
+<script src="assets/js/fake.js"></script>
+</body>
+
+</html>
+
+
+  <!-- Scripts -->
+  <!-- In production, this script should be the only one loaded (or jQuery + this one, maybe)
+       It's compiled with an extra parameter: gulp (here 2 hyphens)prod -->
+  <!-- <script src="assets/js/global.min.js"></script> -->
+
+  <script src="assets/js/jquery.min.js"></script>
+
+  <!-- Megamenu -->
+  <script src="assets/js/megamenu-accessible.js"></script>
+  <script src="assets/js/megamenu-init.js"></script>
+
+  <!-- Offcanvas menu (mobile) -->
+  <script src="assets/js/burgermenu.js"></script>
+
+  <!-- Back to top -->
+  <!-- <script src="assets/js/scroll-to-top.js"></script> -->
+
+  <!-- Script launches and other bits -->
+  <!-- <script src="assets/js/_misc.js"></script> -->
+
+</body>
+
+</html>
